@@ -1,0 +1,252 @@
+﻿body {
+    background-color: #BBF0CE;
+    font-family:Calibri, 'Times New Roman';
+}
+
+#wrapper
+{
+    width:100%;
+    margin:5px auto;
+}
+
+#header
+{
+    width:100%;
+    height:100px;
+    border-left:1px solid #CFCFFF;
+    border-right:1px solid #CFCFFF;
+    border-top:1px solid #CFCFFF;
+    background-image: linear-gradient(#8CE1AB, #EEF9F2);
+    text-align:center;
+    float:left;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    box-sizing:border-box;
+}
+
+
+#container 
+{
+    width:100%;
+    background-color:#FFFFFF; 
+    float:left;
+    clear:left;
+    border:1px solid #8CE1AB;
+    box-sizing:border-box;
+}
+
+#login
+{
+   float:right;
+   margin:5px 10px 0px 0px;
+}
+
+#menu
+{
+   width:100%;
+   min-width:100px;
+   clear:left;
+   float:left;
+   padding:1%;
+   box-sizing:border-box;
+   border-bottom:1px solid #CFCFFF;
+}
+
+
+#content
+{
+    width:100%;
+    min-height:500px;
+    border-left:1px solid #CFCFFF;
+    float:left;
+    clear:left;
+    padding:10px;  
+    box-sizing:border-box; 
+}
+
+#footer
+{
+    width:100%;
+    height:50px;
+    padding-top:10px;
+    border-left:1px solid #CFCFFF;
+    border-right:1px solid #CFCFFF;
+    border-bottom:1px solid #CFCFFF;
+    background-image: linear-gradient(#eceff8, #bfcaea);
+    text-align:center;
+    float:left;
+    clear:both;  
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    box-sizing:border-box;
+}
+
+
+.heading
+{
+    font-size:180%;
+    font-weight:bold;
+    color:#3DB002;
+    margin-top:25px;
+}
+
+.footerspan
+{
+    font-size:120%;
+    font-weight:bold;
+    color:#3DB002;      
+}
+
+.breadcrumbhr
+{
+    color:#CFCFFF;
+    height:1px;
+    border: solid 1px #CFCFFF;
+}
+
+.headingspan
+{
+   font-weight:bold;
+}
+
+.menunode
+{
+    color:#3DB002;
+}
+
+.menunodeselected
+{
+    font-weight:bold;
+}
+
+.menunodehover
+{
+    text-decoration:underline;
+    color:#000000;
+}
+
+.rootnode
+{
+    font-size: 120%;    
+}
+
+.parentnode
+{
+   font-size:100%;    
+}
+
+.topmenu
+{
+   font-size:18pt; 
+   text-align:center;
+   background-color:#FFFFFF;
+   background-color:#eceff8;
+}
+
+.dropmenunode
+{
+   color:#FFFFFF;
+   background-color:#0219B0;
+   margin:0px 2px;
+   width:250px;
+   font-weight:bold;
+}
+
+.dynamicmenunode
+{
+   color:#FFFFFF;
+   background-color:#7ba0ff;
+   margin:0px 2px;
+   width:267px;
+}
+
+#tree 
+{
+   display:none;
+}
+
+#dropdown 
+{
+   display:block;
+   text-align:center; 
+}
+
+
+.lightblue 
+{
+    background-color:#ccccff;
+}
+
+.boldtext 
+{
+    font-weight:bold;
+}
+
+.floatright 
+{
+    float:right;
+}
+
+.weekCalendar a 
+{
+   text-decoration:none;
+}
+
+
+@media screen and (min-width: 460px) 
+{
+   .heading
+   {
+      font-size:266%;
+   }
+
+   .footerSpan
+   {
+      font-size:120%;     
+   }
+}
+
+
+@media screen and (min-width: 1024px) 
+{
+   #content
+   {
+      width:80%;
+      float:left;
+      clear:none;
+   }
+
+   #menu 
+   {
+      width:20%;
+      border-bottom:none;
+   }
+
+   #tree 
+   {
+      display:block;
+   }
+
+   #dropdown 
+   {
+      display:none;
+   }
+}
+
+
+@media screen and (min-width: 1130px) 
+{
+    #wrapper 
+    {
+        width: 95%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) 
+{
+    #wrapper 
+    {
+        width: 90%;
+    }
+}
