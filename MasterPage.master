@@ -28,28 +28,134 @@
       <div id="header">
         <div id="login">
           <asp:LoginView ID="LoginView1" runat="server">
+
             <AnonymousTemplate>
               Welcome: Guest, <asp:LoginStatus ID="LoginStatus1" runat="server" />
             </AnonymousTemplate>
+
             <LoggedInTemplate>
               Welcome: <asp:LoginName ID="LoginName1" runat="server" />, 
               <asp:LoginStatus ID="LoginStatus2" runat="server" LogoutPageUrl="loggedout.aspx" LogoutAction="Redirect" />
             </LoggedInTemplate> 
+
           </asp:LoginView>
         </div> 
         <div class="heading">Sports assicoation</div>
       </div>
-     
-    </div> <!-- lukker div
-          -->
+
+           
+      <div id="container">
+       
+        <div id="menu">
+          <div id="tree">
             
             <br/>
 
-    <div>
+            <!-- Separate HTML for logged in and not logged in users.
+                Menu based on default sitemap for not logged in users.
+                Menu based on custom sitemaps for logged in users, depending on their role.
+            -->
+            <asp:LoginView ID="LoginView2" runat="server">
+                 
+              <AnonymousTemplate>
+                <asp:TreeView ID="TreeView1" DataSourceID="SiteMapDataSource1" runat="server" NodeIndent="10" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
+                </asp:TreeView>
+              </AnonymousTemplate>
+     
+                <RoleGroups>
+                    
+                <asp:RoleGroup Roles="Member">
+                  <ContentTemplate>
+                    <asp:TreeView ID="TreeView1" DataSourceID="MemberSiteMapDataSource" runat="server" NodeIndent="10" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
+                    </asp:TreeView>
+                  </ContentTemplate>
+                </asp:RoleGroup>
+
+                <asp:RoleGroup Roles="Volunteer">
+                  <ContentTemplate>
+                    <asp:TreeView ID="TreeView1" DataSourceID="VolunteerSiteMapDataSource" runat="server" NodeIndent="10" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
+                    </asp:TreeView>
+                  </ContentTemplate>
+                </asp:RoleGroup>
+
+                    <asp:RoleGroup Roles="Employee">
+                  <ContentTemplate>
+                    <asp:TreeView ID="TreeView1" DataSourceID="EmployeeSiteMapDataSource" runat="server" NodeIndent="10" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
+                    </asp:TreeView>
+                  </ContentTemplate>
+                </asp:RoleGroup>
+
+                <asp:RoleGroup Roles="Admin">
+                  <ContentTemplate>
+                    <asp:TreeView ID="TreeView1" DataSourceID="AdminSiteMapDataSource" runat="server" NodeIndent="10" ShowExpandCollapse="False" NodeStyle-CssClass="menunode" HoverNodeStyle-CssClass="menunodehover" SelectedNodeStyle-CssClass="menunodeselected" RootNodeStyle-CssClass="rootnode" ParentNodeStyle-CssClass="parentnode">
+                    </asp:TreeView>
+                  </ContentTemplate>
+                </asp:RoleGroup>
+         
+                </RoleGroups>
+
+                 </asp:LoginView>
+
+                </div>
+
+            <div id="dropdown">
+
+             <asp:LoginView ID="LoginView3" runat="server">
+
+               <AnonymousTemplate>
+                 <asp:Menu ID="Menu1" DataSourceID="SiteMapDataSource1" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
+                 </asp:Menu>
+               </AnonymousTemplate>
+
+               <RoleGroups>
+
+                 <asp:RoleGroup Roles="Member">
+                   <ContentTemplate>
+                     <asp:Menu ID="Menu1" DataSourceID="MemberSiteMapDataSource" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
+                     </asp:Menu>
+                   </ContentTemplate>
+                 </asp:RoleGroup>
+
+                 <asp:RoleGroup Roles="Volunteer">
+                   <ContentTemplate>
+                     <asp:Menu ID="Menu1" DataSourceID="VolunteerSiteMapDataSource" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
+                     </asp:Menu>
+                   </ContentTemplate>
+                 </asp:RoleGroup>
+
+                    <asp:RoleGroup Roles="Employee">
+                   <ContentTemplate>
+                     <asp:Menu ID="Menu1" DataSourceID="EmployeeSiteMapDataSource" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
+                     </asp:Menu>
+                   </ContentTemplate>
+                 </asp:RoleGroup>
+
+                 <asp:RoleGroup Roles="Admin">
+                   <ContentTemplate>
+                     <asp:Menu ID="Menu1" DataSourceID="AdminSiteMapDataSource" runat="server" StaticDisplayLevels="1" Orientation="Horizontal" CssClass="topmenu" StaticMenuItemStyle-CssClass="dropmenunode" DynamicMenuItemStyle-CssClass="dynamicmenunode" StaticEnableDefaultPopOutImage="False" StaticPopOutImageUrl="~/images/arrowdw.png" StaticHoverStyle-BackColor="#0219B0" StaticHoverStyle-ForeColor="White" StaticSelectedStyle-BackColor="#0219B0" DynamicHoverStyle-BackColor="#A1BBFF" DynamicHoverStyle-ForeColor="#0219B0" DynamicSelectedStyle-ForeColor="#0219B0">
+                     </asp:Menu>
+                   </ContentTemplate>
+                 </asp:RoleGroup>
+               
+               </RoleGroups>
+
+             </asp:LoginView>
+                </div>
+                 <hr class="breadcrumbhr" /> 
+            
+         <br/>
+
+  
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-    </div>
+        </div>
+        </div>
+           
+            <div id ="footer">
+        <span class="footerspan">Copyright &#169; Sport Association</span>
+      </div>
+        </div>
     </form>
 </body>
 </html>
