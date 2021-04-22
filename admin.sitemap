@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="" title=""  description="">
-        <siteMapNode url="" title=""  description="" />
-        <siteMapNode url="" title=""  description="" />
+    <siteMapNode url="Default.aspx" title="Home"  description="">
+        <siteMapNode url="admin/CreateEmployee.aspx" title="Create Employee"  description="" />
+        <siteMapNode url="admin/CreateVolunteer.aspx" title="Create Volunteer"  description="" />
+        <siteMapNode url="employee/ScheduleWork.aspx" title="Work schedule"  description="" />
+        <siteMapNode url="volunteer/BookConferenceRoom.aspx" title="Book conference room"  description="" />
+        <siteMapNode url="member/BookFacility.aspx" title="Book facility"  description="" />
+        <siteMapNode url="member/ViewBooking.aspx" title="View bookings"  description="" />
+      <siteMapNode url="" title=""  description="" />
     </siteMapNode>
 </siteMap>

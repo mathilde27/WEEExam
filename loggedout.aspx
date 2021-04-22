@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="loggedout.aspx.cs" Inherits="loggedout" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="loggedout.aspx.cs" Inherits="loggedout" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
+<head runat="server">
     <title>Logged out</title>
     <meta http-equiv="refresh" content="2;url=Default.aspx" />
 </head>
