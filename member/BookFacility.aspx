@@ -21,7 +21,10 @@
          <!-- SQL statement that retrieves all facilities from the database -->
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-             SelectCommand="SELECT [facility] FROM [Facility]">
+             SelectCommand="SELECT [facility] FROM [Facility] WHERE ([conference] = @conference)">
+             <SelectParameters>
+           <asp:Parameter DefaultValue="False" Name="conference" Type="Boolean" />
+       </SelectParameters>
 
         </asp:SqlDataSource>
 
