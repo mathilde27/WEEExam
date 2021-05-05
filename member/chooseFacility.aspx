@@ -14,20 +14,21 @@
               So item 1, 3, 5, etc. will appear as defined in the ItemTemplate, and item 2, 4, 6, etc. will 
               be displayed as defined in this AlternatingItemTemplate 
          -->
-         <div style="background-color:#c1ceff; float:left;padding:10px;margin:0px 5px 5px 0px; border:1px solid #000077">
+         <div style="background-color:#e5ebe1; float:left;padding:10px;margin:0px 5px 5px 0px; border:1px solid #adb3b0; width:350px; height:270px">
           
-               <div style="float:left">
+               <div style="text-align:center">
                <span style="color: #000000;">
                   Facility: <asp:Label ID="facilityidLabel" runat="server" Text='<%# Eval("facility") %>' />
                   <br />
                   Placement: <asp:Label ID="placementLabel" runat="server" Text='<%# Eval("placement") %>' />
                   <br /><br />
                   <asp:Button ID="Button1" runat="server" Text="Select" CommandName="select" />
+                    <br />
                   <br/>
                </span>
             </div>
 
-            <div style="float:right;margin:0px 50px">
+            <div style="text-align:center">
                <!-- Set the image by using the conditional operator. If no image path is in the 
                     database, then use standard image, else use the image path from the database 
                --> 
@@ -47,19 +48,20 @@
             <!-- The ItemTemplate defines how each item in the database will be displayed. 
               To get the value from each column we can use Eval("columnName") 
          --> 
-         <div style="background-color:#c1ceff; float:left; clear:both; padding:10px; margin:0px 5px 5px 0px; border:1px solid #000077">
-            <div style="float:left;">
+         <div style="background-color:#e5ebe1; float:left; clear:both; padding:10px; margin:0px 5px 5px 0px; border:1px solid #adb3b0; width:350px; height:270px">
+            <div style="text-align:center">
                <span style="color: #000000;">
                   Facility: <asp:Label ID="facilityidLabel" runat="server" Text='<%# Eval("facility") %>' />
                   <br />
                   Placement: <asp:Label ID="placementLabel" runat="server" Text='<%# Eval("placement") %>' />
                   <br /><br />
                   <asp:Button ID="Button1" runat="server" Text="Select" CommandName="select" />
+                    <br />
                   <br/>
                </span>
             </div>
 
-            <div style="float:right;margin:0px 50px">
+            <div style="text-align:center">
                <!-- Set the image by using the conditional operator. If no image path is in the 
                     database, then use standard image, else use the image path from the database 
                --> 

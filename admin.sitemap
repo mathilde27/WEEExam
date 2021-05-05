@@ -3,7 +3,6 @@
     <siteMapNode url="Default.aspx" title="Home"  description="">
         <siteMapNode url="admin/CreateUser.aspx" title="Create User"  description="" />
       <siteMapNode url="admin/StatisticsPerFacility.aspx" title="Statistical view facilities"  description="" />
-        <siteMapNode url="employee/ScheduleWork.aspx" title="Work schedule"  description="" />
         <siteMapNode url="volunteer/chooseConferenceRoom.aspx" title="Book conference room"  description="" />
         <siteMapNode url="member/chooseFacility.aspx" title="Book facility"  description="" />
         <siteMapNode url="member/ViewBooking.aspx" title="View bookings"  description="" />

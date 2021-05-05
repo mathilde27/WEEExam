@@ -14,7 +14,7 @@
               So item 1, 3, 5, etc. will appear as defined in the ItemTemplate, and item 2, 4, 6, etc. will 
               be displayed as defined in this AlternatingItemTemplate 
          -->
-         <div style="background-color:#c1ceff; float:left;padding:10px;margin:0px 5px 5px 0px; border:1px solid #000077">
+         <div style="background-color:#e5ebe1; float:left;padding:10px;margin:0px 5px 5px 0px; border:1px solid #adb3b0">
             <div style="float:left">
                <span style="color: #000000;">
                   Room: <asp:Label ID="croomidLabel" runat="server" Text='<%# Eval("conferenceRoom") %>' />
@@ -47,7 +47,7 @@
             <!-- The ItemTemplate defines how each item in the database will be displayed. 
               To get the value from each column we can use Eval("columnName") 
          --> 
-         <div style="background-color:#c1ceff; float:left; clear:both; padding:10px; margin:0px 5px 5px 0px; border:1px solid #000077">
+         <div style="background-color:#e5ebe1; float:left; clear:both; padding:10px; margin:0px 5px 5px 0px; border:1px solid #adb3b0">
             <div style="float:left;">
                <span style="color: #000000;">
                   Room: <asp:Label ID="croomidLabel" runat="server" Text='<%# Eval("conferenceRoom") %>' />

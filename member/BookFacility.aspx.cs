@@ -11,14 +11,26 @@ public partial class member_BookFacility : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        /* If there is a session value stored called "conference", someone has correctly chosen a
+    * room to book, so set the text of the roomValueLabel to that room so the users can see 
+    * which room they are about to book. Else something must have gone wrong so as some sort
+    * of error handling, I will just set it to room VBI-6.01
+    */
+        if (Session.Count > 0 && Session["Facility"].ToString() != null)
+        {
+            facilityValueLabel.Text = Session["Facility"].ToString();
+        }
+        else
+        {
+            facilityValueLabel.Text = "Badminton court1";
+        }
     }
 
 
     protected void BookingButton_Click(object sender, EventArgs e)
     {
         //Get the date as a string from the dateTextBox
-        string dateStr = dateTextbox.Text;
+        string dateStr = dateTextBox.Text;
 
         //Split the date string on every '-' or '/' found
         string[] splitDateStr = dateStr.Split(new char[] { '-', '/' });
@@ -43,10 +55,10 @@ public partial class member_BookFacility : System.Web.UI.Page
         SqlCommand sqlCmd = new SqlCommand(sqlStr, con);
 
         // Fill in the parameters in our prepared SQL statement
-        sqlCmd.Parameters.AddWithValue("@theFacility", FacilityDropDownList.SelectedValue);
+        sqlCmd.Parameters.AddWithValue("@theFacility", facilityValueLabel.Text);
         sqlCmd.Parameters.AddWithValue("@theUser", this.User.Identity.Name);
         sqlCmd.Parameters.AddWithValue("@theDate", theDate);
-        sqlCmd.Parameters.AddWithValue("@theTime", TimeDropDownList.SelectedValue);
+        sqlCmd.Parameters.AddWithValue("@theTime", timeDropDownList.SelectedValue);
 
         // Execute the SQL command
         sqlCmd.ExecuteNonQuery();

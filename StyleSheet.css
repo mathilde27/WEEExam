@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #BBF0CE;
+    background-color: #ffffff;
     font-family:Calibri, 'Times New Roman';
 }
 
@@ -13,10 +13,10 @@
 {
     width:100%;
     height:100px;
-    border-left:1px solid #CFCFFF;
-    border-right:1px solid #CFCFFF;
-    border-top:1px solid #CFCFFF;
-    background-image: linear-gradient(#8CE1AB, #EEF9F2);
+    border-left:1px solid #ffffff;
+    border-right:1px solid #ffffff;
+    border-top:1px solid #ffffff;
+    background-image: linear-gradient(#ffffff, #EEF9F2);
     text-align:center;
     float:left;
     border-top-left-radius:10px;
@@ -69,10 +69,10 @@
     width:100%;
     height:50px;
     padding-top:10px;
-    border-left:1px solid #CFCFFF;
-    border-right:1px solid #CFCFFF;
-    border-bottom:1px solid #CFCFFF;
-    background-image: linear-gradient(#eceff8, #bfcaea);
+    border-left:1px solid #ffffff;
+    border-right:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+    background-image: linear-gradient(#ffffff, #e2f7b5);
     text-align:center;
     float:left;
     clear:both;  
@@ -86,7 +86,7 @@
 {
     font-size:180%;
     font-weight:bold;
-    color:#3DB002;
+    color:#000000;
     margin-top:25px;
 }
 
@@ -94,12 +94,12 @@
 {
     font-size:120%;
     font-weight:bold;
-    color:#3DB002;      
+    color:#d2ebcc;      
 }
 
 .breadcrumbhr
 {
-    color:#CFCFFF;
+    color:#ffffff;
     height:1px;
     border: solid 1px #CFCFFF;
 }
@@ -107,11 +107,13 @@
 .headingspan
 {
    font-weight:bold;
+  font-size:30px;
+  text-align:center;
 }
 
 .menunode
 {
-    color:#3DB002;
+    color:#000000;
 }
 
 .menunodeselected
@@ -172,10 +174,6 @@
 }
 
 
-.lightblue 
-{
-    background-color:#ccccff;
-}
 
 .boldtext 
 {

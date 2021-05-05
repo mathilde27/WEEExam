@@ -40,7 +40,7 @@
 
           </asp:LoginView>
         </div> 
-        <div class="heading">Sports assicoation</div>
+        <div class="heading">Bjerringbro Sports Club</div>
       </div>
 
 
@@ -156,7 +156,7 @@
         </div>
            
             <div id ="footer">
-        <span class="footerspan">Copyright &#169; Sport Association</span>
+        <span class="footerspan">Copyright &#169; Sport Association Bjerringsbro ApS</span>
       </div>
         </div>
     </form>

@@ -13,50 +13,37 @@
      <asp:LoginName ID="userLoginName" Width="120px" runat="server" />
    <br /><br />
 
-   <asp:Label ID="facilityLabel" runat="server" Width="60px" Text="Facility:"></asp:Label>
-    <asp:DropDownList ID="FacilityDropDownList" runat="server" Width="120px"
-         DataSourceID="SqlDataSource1" DataTextField="facility" DataValueField="facility" 
-        ></asp:DropDownList>
-
-         <!-- SQL statement that retrieves all facilities from the database -->
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-             SelectCommand="SELECT [facility] FROM [Facility] WHERE ([conference] = @conference)">
-             <SelectParameters>
-           <asp:Parameter DefaultValue="False" Name="conference" Type="Boolean" />
-       </SelectParameters>
-
-        </asp:SqlDataSource>
-
-        <br /><br />
-
-    <asp:Label ID="dateLabel" runat="server" Text="Date"></asp:Label>
-    <asp:TextBox ID="dateTextbox" runat="server" Width="114px"></asp:TextBox>
+ <asp:Label ID="facilityValueLabel" runat="server" Width="60px" Text="Facility"></asp:Label>
+    
     <br /><br />
 
-       <!-- AJAXControl that makes a calendar appear when the dateTextBox is clicked -->
+   <asp:Label ID="timeLabel" runat="server" Width="60px" Text="Time:"></asp:Label>
+   <asp:DropDownList ID="timeDropDownList" runat="server" Width="120px" 
+        DataSourceID="SqlDataSource1" DataTextField="time" DataValueField="time">
+   </asp:DropDownList>
+
+     <!-- SQL statement that retrieves all times from the database -->
+   <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+       ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+       SelectCommand="SELECT [time] FROM [times]">
+   </asp:SqlDataSource>
+   <br /><br />
+
+    <asp:Label ID="dateLabel" runat="server" Width="60px" Text="Date:"></asp:Label>
+   <asp:TextBox ID="dateTextBox" runat="server" Width="114px"></asp:TextBox>
+   <br /><br />
+
+    <!-- AJAXControl that makes a calendar appear when the dateTextBox is clicked -->
     <asp:CalendarExtender TargetControlID="dateTextBox" ID="CalendarExtender1" runat="server" 
         FirstDayOfWeek="Monday" Format="dd/MM-yyyy">
     </asp:CalendarExtender>
-    
-    <br /><br />
-        
-     
-        <asp:Label ID="TimeLabel" runat="server" Width="60px" Text="Time:"></asp:Label>
-        <asp:DropDownList ID="TimeDropDownList" runat="server" Width="120px" 
-            DataSourceID="SqlDataSource2" DataTextField="time" DataValueField="time" >
-        </asp:DropDownList>
 
-      <!-- SQL statement that retrieves all times from the database -->
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server"
-         ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
-         SelectCommand="SELECT [time] FROM [times]"></asp:SqlDataSource>
-
-       <!-- When this button is clicked the method "BookingButton_Click" in the code behind file is called -->
+     <!-- When this button is clicked the method "BookingButton_Click" in the code behind file is called -->
    <asp:Button ID="BookingButton" runat="server" Text="Create Booking" onclick="BookingButton_Click" />
    <br /><br />
     
-      <asp:Label ID="resultLabel" runat="server" Text=""></asp:Label>
+   <asp:Label ID="resultLabel" runat="server" Text=""></asp:Label>
 
+        <br /><br />
 
 </asp:Content>
