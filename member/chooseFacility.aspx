@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <span class="headingspan">Choose a facility to book:</span> <br /><br />
+    <span class="headingspan">Choose a facility to book</span> <br /><br />
 
          <asp:ListView ID="ListView1" runat="server" DataKeyNames="facility" 
          DataSourceID="SqlDataSource1" OnSelectedIndexChanged="selected">
@@ -14,7 +14,7 @@
               So item 1, 3, 5, etc. will appear as defined in the ItemTemplate, and item 2, 4, 6, etc. will 
               be displayed as defined in this AlternatingItemTemplate 
          -->
-         <div style="background-color:#e5ebe1; float:left;padding:10px;margin:0px 5px 5px 0px; border:1px solid #adb3b0; width:350px; height:270px">
+         <div style="background-color:#e6eeff; float:left;padding:10px;margin:0px 5px 5px 0px; border:1px solid #002b80; width:350px; height:270px">
           
                <div style="text-align:center">
                <span style="color: #000000;">
@@ -48,7 +48,7 @@
             <!-- The ItemTemplate defines how each item in the database will be displayed. 
               To get the value from each column we can use Eval("columnName") 
          --> 
-         <div style="background-color:#e5ebe1; float:left; clear:both; padding:10px; margin:0px 5px 5px 0px; border:1px solid #adb3b0; width:350px; height:270px">
+         <div style="background-color:#e6eeff; float:left; clear:both; padding:10px; margin:0px 5px 5px 0px; border:1px solid #002b80; width:350px; height:270px">
             <div style="text-align:center">
                <span style="color: #000000;">
                   Facility: <asp:Label ID="facilityidLabel" runat="server" Text='<%# Eval("facility") %>' />

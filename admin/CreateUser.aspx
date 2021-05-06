@@ -4,11 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-       <span class="headingspan">Create a new user with role</span> <br /><br />
+       <span class="headingspan">Create a new user</span> <br /><br />
    
     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" LoginCreatedUser="False" OnCreatedUser="CreateUserWizard1_CreatedUser">
         <WizardSteps>
-            <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
+            <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server" >
                 <ContentTemplate> 
                     <table> 
                         <tr>

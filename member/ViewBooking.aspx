@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-      <span class="headingspan">View booking:</span> <br /><br />
+      <span class="headingspan">View booking</span> <br /><br />
 
          <div class="floatright">
          

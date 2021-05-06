@@ -3,6 +3,7 @@
     <siteMapNode url="Default.aspx" title="Home"  description="">
       <siteMapNode url="member/chooseFacility.aspx" title="Book facility"  description="" />
         <siteMapNode url="member/ViewBooking.aspx" title="View bookings"  description="" />
+      <siteMapNode url="member/MyBookings.aspx" title="View personal bookings"  description="" />
       <siteMapNode url="" title=""  description="" />
     </siteMapNode>
 </siteMap>

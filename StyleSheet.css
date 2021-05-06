@@ -12,12 +12,11 @@
 #header
 {
     width:100%;
-    height:100px;
+    height:130px;
     border-left:1px solid #ffffff;
     border-right:1px solid #ffffff;
     border-top:1px solid #ffffff;
-    background-image: linear-gradient(#ffffff, #EEF9F2);
-    text-align:center;
+    background-color:#ffffff;
     float:left;
     border-top-left-radius:10px;
     border-top-right-radius:10px;
@@ -31,7 +30,7 @@
     background-color:#FFFFFF; 
     float:left;
     clear:left;
-    border:1px solid #8CE1AB;
+    border:1px solid #002b80;
     box-sizing:border-box;
 }
 
@@ -49,7 +48,7 @@
    float:left;
    padding:1%;
    box-sizing:border-box;
-   border-bottom:1px solid #CFCFFF;
+   border-bottom: 1px solid #002b80;
 }
 
 
@@ -57,7 +56,7 @@
 {
     width:100%;
     min-height:500px;
-    border-left:1px solid #CFCFFF;
+    border-left:1px solid #002b80;
     float:left;
     clear:left;
     padding:10px;  
@@ -72,7 +71,7 @@
     border-left:1px solid #ffffff;
     border-right:1px solid #ffffff;
     border-bottom:1px solid #ffffff;
-    background-image: linear-gradient(#ffffff, #e2f7b5);
+    background-color:#ffffff;
     text-align:center;
     float:left;
     clear:both;  
@@ -90,19 +89,21 @@
     margin-top:25px;
 }
 
+.logo {
+    float:left;
+    width:100px;
+    height:auto;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+
 .footerspan
 {
     font-size:120%;
     font-weight:bold;
-    color:#d2ebcc;      
+    color:#99bbff;      
 }
 
-.breadcrumbhr
-{
-    color:#ffffff;
-    height:1px;
-    border: solid 1px #CFCFFF;
-}
 
 .headingspan
 {
@@ -111,9 +112,17 @@
   text-align:center;
 }
 
+.headingspan2
+{
+   font-weight:bold;
+  font-size:20px;
+  color:#002b80;
+  text-align:left;
+}
+
 .menunode
 {
-    color:#000000;
+    color:#002b80;
 }
 
 .menunodeselected
@@ -142,7 +151,7 @@
    font-size:18pt; 
    text-align:center;
    background-color:#FFFFFF;
-   background-color:#eceff8;
+   background-color:#FFFFFF;
 }
 
 .dropmenunode
@@ -173,7 +182,43 @@
    text-align:center; 
 }
 
+.newsletter {
+    width:300px;
+    height:auto;  
+    float:left;
+    margin: 3px;
+    padding:5px;
+    background-color: #e6eeff;
+}
 
+.aboutus {
+     width:300px;
+    height:auto;
+    float:left;
+    margin: 3px;
+    padding:5px;
+    background-color: #e6eeff;
+}
+
+.coach {
+    float:left;
+    margin: 3px;
+    padding:5px;
+    background-color: #e6eeff;
+}
+
+.padel {
+    margin: 3px;
+    padding:5px;
+    width:445px;
+    float:left;
+    background-color: #e6eeff;
+}
+#padelPicture {
+    width:380px;
+    height:auto;
+
+}
 
 .boldtext 
 {

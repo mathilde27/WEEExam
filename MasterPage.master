@@ -40,7 +40,9 @@
 
           </asp:LoginView>
         </div> 
-        <div class="heading">Bjerringbro Sports Club</div>
+        <div class="heading">
+            <asp:Image ID="Image1" CssClass="logo" ImageUrl="~/images/logo.jpg" runat="server" />
+            Bjerringbro Sports Club</div>
       </div>
 
 
@@ -144,7 +146,6 @@
           </div>
 
         </div>
-                 <hr class="breadcrumbhr" /> 
             
          <br/>
 

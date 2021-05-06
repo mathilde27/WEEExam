@@ -2,6 +2,7 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="volunteer/BookConferenceRoom.aspx" title="Book conference room"  description="">
         <siteMapNode url="Default.aspx" title="Home"  description="" />
+      <siteMapNode url="member/MyBookings.aspx" title="View personal bookings"  description="" />
         <siteMapNode url="" title=""  description="" />
     </siteMapNode>
 </siteMap>
