@@ -5,7 +5,7 @@
       <siteMapNode url="admin/StatisticsPerFacility.aspx" title="Statistical view facilities"  description="" />
         <siteMapNode url="volunteer/chooseConferenceRoom.aspx" title="Book conference room"  description="" />
         <siteMapNode url="member/chooseFacility.aspx" title="Book facility"  description="" />
-        <siteMapNode url="member/ViewBooking.aspx" title="View bookings"  description="" />
+      <siteMapNode url="employee/ViewBooking.aspx" title="View bookings"  description="" />
       <siteMapNode url="member/MyBookings.aspx" title="View personal bookings"  description="" />
       <siteMapNode url="" title=""  description="" />
     </siteMapNode>

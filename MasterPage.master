@@ -18,7 +18,7 @@
 
         <asp:SiteMapDataSource ID="AdminSiteMapDataSource" runat="server" SiteMapProvider="AdminSitemap" />
         <asp:SiteMapDataSource ID="EmployeeSiteMapDataSource" runat="server" SiteMapProvider="EmployeeSitemap" />
-        <asp:SiteMapDataSource ID="VolunteerDataSource" runat="server" SiteMapProvider="VolunteerSitemap" />
+        <asp:SiteMapDataSource ID="VolunteerSiteMapDataSource" runat="server" SiteMapProvider="VolunteerSitemap" />
         <asp:SiteMapDataSource ID="MemberSiteMapDataSource" runat="server" SiteMapProvider="MemberSitemap" />
     
     
